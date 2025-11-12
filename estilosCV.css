@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CV Sebastian Sarasti</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Sebastian Sarasti</h1>
+        </header>
+        
+        <aside>
+            <img src="Foto.png" alt="Fotografía de Sebastian Sarasti"> <br>
+            <b>Contacto</b> <br>
+            <ul>
+                <li>📍 Quito Norte</li>
+                <li>📞 +593 983883095</li>
+                <li>📩 sebastiansarasti.14@gmail.com</li>
+                <li>🎂 14/07/2004</li>
+                <li>🏳️ Ecuatoriano</li>
+            </ul>
+            <b>Aptitudes</b> <br>
+            <ul>
+                <li>Trabajo en Equipo</li>
+                <li>Habilidad para aprender</li>
+                <li>Puntualidad y responsabilidad</li>
+                <li>Resolución de problemas</li>
+                <li>Atención al detalle</li>
+            </ul>
+            <b>Proyectos</b> <br>
+            <ul>
+                <li><a href="https://url-shortener.me/7OFI">Portafolio</a></li>
+                <li><a href="https://github.com/SebSar1">Github</a></li>
+            </ul>
+        </aside>
+        
+        <section id="Sobre-mi">
+            <b>Sobre mi</b><br>
+            Soy un estudiante apasionado de Ingeniería de Software con un fuerte enfoque en la resolución de problemas y el aprendizaje continuo. Busco oportunidades para aplicar mis habilidades en entornos desafiantes y contribuir al desarrollo de tecnología innovadora.
+        </section>
+
+        <section id="Formación">
+            <b>Formación</b>
+            <ul>
+                <li><b>Estudiante de Ing. de Software</b> (10/2022 - En curso) <br>
+                    Escuela Politécnica Nacional - Quito, P</li>
+                <li><b>Certifición ICI2ST</b>, Sistemas de Información y Tecnologías de Software (11/2023) <br>
+                    EPN - Quito, P </li>
+                <li><b>Certificación JISIC</b>, Transformación Digital y Blockchain (05/2024) <br>
+                    EPN - Quito, P </li>
+                <li><b>Certificación CISCO</b>, Introducción a la ciberseguridad (08/2024) <br>
+                    Cisco Networking Academy</li>
+            </ul>
+        </section>
+        
+        <section id="Historial-Laboral">
+            <b>Historial Laboral</b>
+            <p>
+                <b>Vocal</b>, (03/2023 - 12/2024) <br>
+                <b>Asociación de Estudiantes de Ingeniería de Sistemas EPN</b> - Quito
+            </p>
+            <ul>
+                <li>Liderazgo y Colaboración: Dirigí y participé
+                    activamente en equipos para organizar logística deportiva y eventos recreativos,
+                    demostrando una sólida capacidad de colaboración y liderazgo. </li>
+                <li>Organización y Planificación: Fui responsable de la planificación y
+                    ejecución de actividades a gran escala (torneos interfacultades, eventos comunitarios
+                    y actividades institucionales).</li>
+                <li>Comunicación y Promoción: Contribuí a elevar la imagen de la Asociación
+                    (AEIS) mediante la documentación visual y la difusión efectiva de eventos</li>
+            </ul>
+            
+            <p>
+                <b>Proyectos Universitarios</b>, (03/2022 - Actual) - Quito <br>
+                <b>Escuela Politécnica Nacional</b>
+            </p>
+            <ul>
+                <li>Liderazgo de Equipos: Asumí la dirección de algunos grupos de trabajo, motivando a los compañeros y fomentando un ambiente de colaboración y compromiso.</li>
+                <li>Organización Estratégica: Fui responsable de la planificación general de varios proyectos y de la distribución inteligente de tareas, asegurando que cada miembro contribuyera de forma óptima según sus fortalezas.</li>
+                <li>Aseguramiento de Resultados: Organicé revisiones periódicas de los avances y realicé la validación final de los entregables para garantizar que el producto cumpliera con todos los criterios de excelencia y los requisitos académicos.</li>
+            </ul>
+        </section>
+        
+        <section id="Idiomas">
+            <b>Idiomas</b>
+            <ul>
+                <li><b>Español</b> - Nativo</li>
+                <li><b>Inglés</b> - Intermedio Avanzado B2</li>
+            </ul>
+        </section>
+        
+        <section id="Diplomas">
+            <b>Diplomas</b>
+            <ul>
+                <li>Certificado de Aprobación Satisfactoria Examen Media Carrera</li>
+                <li>Escolta del estandarte de la ciudad - Colegio Marista UIO</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
