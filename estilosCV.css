@@ -1,106 +1,164 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <title>CV Sebastian Sarasti</title>
-</head>
-<body>
-    <main>
-        <header>
-            <h1>Sebastian Sarasti</h1>
-        </header>
-        
-        <aside>
-            <img src="Foto.png" alt="Fotografía de Sebastian Sarasti"> <br>
-            <b>Contacto</b> <br>
-            <ul>
-                <li>📍 Quito Norte</li>
-                <li>📞 +593 983883095</li>
-                <li>📩 sebastiansarasti.14@gmail.com</li>
-                <li>🎂 14/07/2004</li>
-                <li>🏳️ Ecuatoriano</li>
-            </ul>
-            <b>Aptitudes</b> <br>
-            <ul>
-                <li>Trabajo en Equipo</li>
-                <li>Habilidad para aprender</li>
-                <li>Puntualidad y responsabilidad</li>
-                <li>Resolución de problemas</li>
-                <li>Atención al detalle</li>
-            </ul>
-            <b>Proyectos</b> <br>
-            <ul>
-                <li><a href="https://url-shortener.me/7OFI">Portafolio</a></li>
-                <li><a href="https://github.com/SebSar1">Github</a></li>
-            </ul>
-        </aside>
-        
-        <section id="Sobre-mi">
-            <b>Sobre mi</b><br>
-            Soy un estudiante apasionado de Ingeniería de Software con un fuerte enfoque en la resolución de problemas y el aprendizaje continuo. Busco oportunidades para aplicar mis habilidades en entornos desafiantes y contribuir al desarrollo de tecnología innovadora.
-        </section>
+/* --- Configuración Global y Reseteo Básico --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #f0f2f5; /* Fondo gris claro para la página */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
 
-        <section id="Formación">
-            <b>Formación</b>
-            <ul>
-                <li><b>Estudiante de Ing. de Software</b> (10/2022 - En curso) <br>
-                    Escuela Politécnica Nacional - Quito, P</li>
-                <li><b>Certifición ICI2ST</b>, Sistemas de Información y Tecnologías de Software (11/2023) <br>
-                    EPN - Quito, P </li>
-                <li><b>Certificación JISIC</b>, Transformación Digital y Blockchain (05/2024) <br>
-                    EPN - Quito, P </li>
-                <li><b>Certificación CISCO</b>, Introducción a la ciberseguridad (08/2024) <br>
-                    Cisco Networking Academy</li>
-            </ul>
-        </section>
-        
-        <section id="Historial-Laboral">
-            <b>Historial Laboral</b>
-            <p>
-                <b>Vocal</b>, (03/2023 - 12/2024) <br>
-                <b>Asociación de Estudiantes de Ingeniería de Sistemas EPN</b> - Quito
-            </p>
-            <ul>
-                <li>Liderazgo y Colaboración: Dirigí y participé
-                    activamente en equipos para organizar logística deportiva y eventos recreativos,
-                    demostrando una sólida capacidad de colaboración y liderazgo. </li>
-                <li>Organización y Planificación: Fui responsable de la planificación y
-                    ejecución de actividades a gran escala (torneos interfacultades, eventos comunitarios
-                    y actividades institucionales).</li>
-                <li>Comunicación y Promoción: Contribuí a elevar la imagen de la Asociación
-                    (AEIS) mediante la documentación visual y la difusión efectiva de eventos</li>
-            </ul>
-            
-            <p>
-                <b>Proyectos Universitarios</b>, (03/2022 - Actual) - Quito <br>
-                <b>Escuela Politécnica Nacional</b>
-            </p>
-            <ul>
-                <li>Liderazgo de Equipos: Asumí la dirección de algunos grupos de trabajo, motivando a los compañeros y fomentando un ambiente de colaboración y compromiso.</li>
-                <li>Organización Estratégica: Fui responsable de la planificación general de varios proyectos y de la distribución inteligente de tareas, asegurando que cada miembro contribuyera de forma óptima según sus fortalezas.</li>
-                <li>Aseguramiento de Resultados: Organicé revisiones periódicas de los avances y realicé la validación final de los entregables para garantizar que el producto cumpliera con todos los criterios de excelencia y los requisitos académicos.</li>
-            </ul>
-        </section>
-        
-        <section id="Idiomas">
-            <b>Idiomas</b>
-            <ul>
-                <li><b>Español</b> - Nativo</li>
-                <li><b>Inglés</b> - Intermedio Avanzado B2</li>
-            </ul>
-        </section>
-        
-        <section id="Diplomas">
-            <b>Diplomas</b>
-            <ul>
-                <li>Certificado de Aprobación Satisfactoria Examen Media Carrera</li>
-                <li>Escolta del estandarte de la ciudad - Colegio Marista UIO</li>
-            </ul>
-        </section>
-    </main>
-</body>
-</html>
+/* --- Contenedor Principal del CV --- */
+main {
+    display: grid;
+    /* Define 2 columnas: 320px para la barra lateral, 1fr para el resto */
+    grid-template-columns: 320px 1fr;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el CV en la página */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen */
+}
+
+/* --- Encabezado (Nombre) --- */
+header {
+    /* El encabezado ocupará ambas columnas */
+    grid-column: 1 / 3;
+    background-color: #2c3e50; /* Azul oscuro/pizarra */
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 300; /* Fuente más ligera para un look moderno */
+    letter-spacing: 1.5px;
+}
+
+/* --- Barra Lateral (Información de Contacto y Habilidades) --- */
+aside {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+    background-color: #f8f9fa; /* Un gris muy claro para la barra lateral */
+    padding: 30px;
+    border-right: 1px solid #e9ecef;
+}
+
+aside img {
+    /* Sobrescribir el estilo en línea del HTML */
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 50%; /* Foto de perfil circular */
+    object-fit: cover; /* Evita que la imagen se estire */
+    display: block;
+    margin: 0 auto 25px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de la barra lateral (Contacto, Aptitudes, Proyectos) */
+aside b {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #bdc3c7; /* Línea sutil */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+aside b:first-of-type {
+    margin-top: 0; /* El primer título no necesita margen superior */
+}
+
+aside ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 0;
+    margin: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    display: flex; /* Para alinear íconos (como el emoji) */
+    align-items: center;
+}
+
+/* --- Contenido Principal (Secciones) --- */
+section {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    padding: 30px 40px;
+    /* Separador entre secciones */
+    border-bottom: 1px solid #e9ecef;
+}
+
+section:last-of-type {
+    border-bottom: none; /* La última sección no necesita borde */
+}
+
+/* Títulos de las secciones principales (Formación, Historial, etc.) */
+section > b {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #34495e; /* Azul/gris más suave */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db; /* Línea de acento azul */
+}
+
+/* --- Estilos Específicos --- */
+
+/* Listas del contenido principal */
+section ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+section li {
+    margin-bottom: 12px;
+}
+
+/* Historial Laboral y Proyectos */
+#Historial-Laboral p {
+    margin-bottom: 0.5em; /* Espacio antes de la lista de tareas */
+}
+
+/* Título del Puesto (ej. "Vocal") */
+#Historial-Laboral p > b:first-of-type {
+    font-size: 1.15em;
+    color: #222;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* Compañía (ej. "Asociación de Estudiantes...") */
+#Historial-Laboral p > b:nth-of-type(2) {
+    font-size: 1.05em;
+    color: #555;
+    font-weight: 600;
+}
+
+#Historial-Laboral ul {
+    margin-top: 10px;
+    margin-bottom: 25px; /* Espacio entre experiencias */
+}
+
+/* Enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
